@@ -1,0 +1,23 @@
+.tabs {
+  color: white;
+  margin: 0;
+  display: inline;
+}
+.tabs > li {
+  list-style-type: none;
+  padding: 10px;
+  text-align: left;
+  display: inline-block;
+  cursor: pointer;
+}
+.tabs > li:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
+    0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+  font-weight: 2em;
+}
+.back-icon:hover {
+  transform: rotate(-100deg);
+}
+.back-icon {
+  height: 0.9em;
+}

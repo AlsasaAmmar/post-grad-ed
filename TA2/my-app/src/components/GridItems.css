@@ -1,0 +1,12 @@
+.gridItem {
+  width: 250px;
+  height: 370px;
+}
+.item_backside {
+  width: 250px;
+  height: 350px;
+}
+.gridItem img {
+  height: 75%;
+  width: 100%;
+}

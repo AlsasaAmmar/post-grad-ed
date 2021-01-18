@@ -1,0 +1,46 @@
+.movie_info_container {
+  display: flex;
+}
+.movie_info_card {
+  width: 80%;
+  margin: 10px auto;
+}
+.movie_info_container > img {
+  height: 50vh;
+  padding: 1rem;
+}
+.movie_info_sub-container {
+  padding-left: 0.1rem;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.404);
+}
+.movie_info_sub-container li {
+  list-style-type: none;
+  padding: 0.2rem;
+}
+.movie_info_sub-container h2 {
+  font-family: "Sigma Five", sans-serif;
+  letter-spacing: 0.1rem;
+  color: rgb(224, 224, 52);
+}
+.movie_info_sub-container li span {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .movie_info_container {
+    flex-direction: column;
+  }
+  .movie_info_container > img {
+    margin: auto;
+
+    padding: 1rem;
+  }
+  .movie_info_sub-container {
+    margin: 0;
+    text-align: center;
+  }
+  .movie_info_sub-container ul {
+    padding: 1rem;
+  }
+}

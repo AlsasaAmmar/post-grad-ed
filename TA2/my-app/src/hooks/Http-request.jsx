@@ -15,7 +15,6 @@ export const useHttpRequest = url => {
         setErr(false)
       } catch (err) {
         setErr(true)
-        console.log(err)
       }
     }
     fetchData(url)
