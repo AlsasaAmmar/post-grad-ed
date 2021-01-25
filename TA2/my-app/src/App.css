@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 html {
-  background-image: url("./pics/stars.gif");
+  background-image: url("./pics/starsmoving.gif");
   background-repeat: repeat;
 }
 .App {
