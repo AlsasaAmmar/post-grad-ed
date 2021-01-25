@@ -2,13 +2,15 @@ import React, { useContext } from 'react'
 import { useHttpRequest } from '../hooks/Http-request'
 import { MovieContext } from '../MovieContext'
 import MovieTile from '../components/MovieTile'
+
 import './MoviesList.css'
 
 
 export default function MoviesList() {
   const url = `${process.env.REACT_APP_ROOT_PATH}films/`
   const [loading, err, data] = useHttpRequest(url)
-  const movies = data.results
+  const movies = data.result
+
   const { currentMovie, setCurrentMovie } = useContext(MovieContext)
   setCurrentMovie(null)
 
