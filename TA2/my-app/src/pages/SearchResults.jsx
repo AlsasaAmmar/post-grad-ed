@@ -17,17 +17,18 @@ export default function SearchResults() {
     const searchParams = new URLSearchParams(search)
     const searchTerm = searchParams.get('name')
     const [loading, , data] = useHttpRequest(`${process.env.REACT_APP_ROOT_PATH}/people/?name=${searchTerm}`)
+    console.log("🚀 ~ file: SearchResults.jsx ~ line 20 ~ SearchResults ~ data", data)
 
     return (
         <div>
             {!loading && (
                 <Fade duration={500}>
                     <div className="tabs_body">
-                        {data.results.length < 1 ?
+                        {data.result.length < 1 ?
                             <Card>
                                 <h3>No character was found</h3>
                             </Card>
-                            : data.results.map(character => <GridItem data={character} defaultPhoto={defaultAvatar} elKeys={itemsKeys.characterKeys} activeTab={'Characters'} />)}
+                            : data.result.map((character, i) => <GridItem key={i} data={character} defaultPhoto={defaultAvatar} elKeys={itemsKeys.characterKeys} activeTab={'Characters'} />)}
                     </div>
                 </Fade>
             )}
