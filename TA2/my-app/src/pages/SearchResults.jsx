@@ -17,7 +17,6 @@ export default function SearchResults() {
     const searchParams = new URLSearchParams(search)
     const searchTerm = searchParams.get('name')
     const [loading, , data] = useHttpRequest(`${process.env.REACT_APP_ROOT_PATH}/people/?name=${searchTerm}`)
-    console.log("🚀 ~ file: SearchResults.jsx ~ line 20 ~ SearchResults ~ data", data)
 
     return (
         <div>
